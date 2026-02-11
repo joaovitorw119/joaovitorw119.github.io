@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e293b;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 820px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 22px;
+  backdrop-filter: blur(6px);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 36px;
+  color: #38bdf8;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  opacity: 0.9;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: 0.25s;
+}
+
+.chip:hover {
+  transform: translateY(-2px);
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.35);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+
+.projTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.project h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.msg {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+button {
+  background: #38bdf8;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #0ea5e9;
+  transform: scale(1.04);
+}
+
+.footer {
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 16px;
+}
+
+/* TEMA CLARO */
+body.claro {
+  background: #f4f4f4;
+  color: #222;
+}
+
+body.claro .card {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.10);
+}
+
+body.claro .chip {
+  color: #222;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+body.claro .skills li {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+body.claro .msg {
+  color: #0ea5e9;
+}
+
+/* RESPONSIVO */
+@media (max-width: 650px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}

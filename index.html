@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="card">
+      <div class="top">
+        <div>
+          <h1>João Vitor</h1>
+          <p class="subtitle">Desenvolvedor Front-End em formação 🚀</p>
+        </div>
+
+        <button id="btnTema">🌙 Modo escuro</button>
+      </div>
+
+      <div class="links">
+        <a class="chip" href="#" target="_blank">GitHub</a>
+        <a class="chip" href="#" target="_blank">LinkedIn</a>
+        <a class="chip" href="mailto:seuemail@email.com">Email</a>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Sobre mim</h2>
+        <p>Sou estudante de programação e estou aprendendo HTML, CSS e JavaScript.</p>
+      </section>
+
+      <section class="card">
+        <h2>Habilidades</h2>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section class="card full">
+        <div class="projTop">
+          <h2>Projetos</h2>
+          <button id="btnProjeto">✨ Ver mensagem</button>
+        </div>
+
+        <div class="project">
+          <h3>Meu primeiro site interativo</h3>
+          <p>Projeto simples para treinar HTML, CSS e JS (tema claro/escuro e interações).</p>
+          <p id="mensagem" class="msg"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Feito por João Vitor • 2026</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
