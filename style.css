@@ -200,3 +200,27 @@ body.claro .project{
   background: rgba(0,0,0,0.04);
   border-color: rgba(0,0,0,0.12);
 }
+/* ===== Projetos em GRID (mais organizado) ===== */
+.card.full{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* a barra de cima (título + botão) ocupa a largura toda */
+.card.full .projTop{
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+/* cada projeto vira um card igual */
+.card.full .project{
+  margin-top: 0; /* tira aquele espaço extra do seu .project */
+}
+
+/* em celular fica 1 coluna */
+@media (max-width: 650px){
+  .card.full{
+    grid-template-columns: 1fr;
+  }
+}
