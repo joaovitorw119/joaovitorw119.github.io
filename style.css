@@ -170,3 +170,33 @@ body.claro .msg {
     font-size: 30px;
   }
 }
+/* ===== Projetos (cards) ===== */
+.project{
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+}
+
+.project h3{
+  margin: 0 0 6px 0;
+}
+
+.project p{
+  margin: 0 0 10px 0;
+  opacity: 0.9;
+}
+
+/* deixa o botão “Ver projeto” mais alinhado */
+.project .chip{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* no tema claro */
+body.claro .project{
+  background: rgba(0,0,0,0.04);
+  border-color: rgba(0,0,0,0.12);
+}
